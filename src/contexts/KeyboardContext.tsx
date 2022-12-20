@@ -77,6 +77,9 @@ export type KeyboardProps = {
   styles?: RecursivePartial<Styles>
   enableSearchAnimation?: boolean
   enableCategoryChangeAnimation?: boolean
+  currentlySelectedEmojis?: string[]
+  selectedEmojiStyle?: ViewStyle
+  selectedEmojiCallback?: (emoji: EmojiType) => void
 }
 export type ContextValues = {
   activeCategoryIndex: number
@@ -152,6 +155,9 @@ export const defaultKeyboardContext: Required<KeyboardProps> & { theme: Theme; s
   styles: emptyStyles,
   enableSearchAnimation: true,
   enableCategoryChangeAnimation: true,
+  currentlySelectedEmojis: [],
+  selectedEmojiStyle: {},
+  selectedEmojiCallback: (_emoji: EmojiType) => {},
 }
 
 export const defaultKeyboardValues: ContextValues = {
