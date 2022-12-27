@@ -80,6 +80,7 @@ export type KeyboardProps = {
   currentlySelectedEmojis?: string[]
   selectedEmojiStyle?: ViewStyle
   selectedEmojiCallback?: (emoji: EmojiType) => void
+  enableCategoryChangeGesture?: boolean
 }
 export type ContextValues = {
   activeCategoryIndex: number
@@ -158,6 +159,7 @@ export const defaultKeyboardContext: Required<KeyboardProps> & { theme: Theme; s
   currentlySelectedEmojis: [],
   selectedEmojiStyle: {},
   selectedEmojiCallback: (_emoji: EmojiType) => {},
+  enableCategoryChangeGesture: true,
 }
 
 export const defaultKeyboardValues: ContextValues = {
