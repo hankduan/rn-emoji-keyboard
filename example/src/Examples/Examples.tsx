@@ -16,6 +16,7 @@ export type RootStackParamList = {
   TopCategory: undefined
   BottomCategory: undefined
   SearchBar: undefined
+  SelectedEmoji: undefined
 }
 
 type Props = StackScreenProps<RootStackParamList, 'Examples'>
@@ -36,7 +37,7 @@ const Examples = ({ navigation }: Props) => {
           onPress={() => navigation.navigate('DisabledCategories')}
         />
         <Button
-          title="Static Modal (wihtout knob)"
+          title="Static Modal (without knob)"
           onPress={() => navigation.navigate('StaticModal')}
         />
         <Button title="Static Component" onPress={() => navigation.navigate('Static')} />
@@ -47,6 +48,7 @@ const Examples = ({ navigation }: Props) => {
         <Button title="Category Top" onPress={() => navigation.navigate('TopCategory')} />
         <Button title="Category Bottom" onPress={() => navigation.navigate('BottomCategory')} />
         <Button title="Search Bar" onPress={() => navigation.navigate('SearchBar')} />
+        <Button title="Selected Emoji" onPress={() => navigation.navigate('SelectedEmoji')} />
       </View>
     </SafeAreaView>
   )
