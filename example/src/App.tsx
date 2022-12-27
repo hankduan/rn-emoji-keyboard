@@ -14,7 +14,7 @@ import TopCategory from './TopCategory/TopCategory'
 import BottomCategory from './BottomCategory/BottomCategory'
 import SearchBar from './SearchBar/SearchBar'
 import CategoryChangeGesture from './Basic/CategoryChangeGesture'
-import SelectedEmoji from './SelectedEmoji/SelectedEmoji'
+import SelectedEmojis from './SelectedEmojis/SelectedEmojis'
 
 const Stack = createStackNavigator<RootStackParamList>()
 export default () => {
@@ -33,7 +33,7 @@ export default () => {
         <Stack.Screen name="CategoryChangeGesture" component={CategoryChangeGesture} />
         <Stack.Screen name="StaticModal" component={StaticModal} />
         <Stack.Screen name="Static" component={Static} />
-        <Stack.Screen name="SelectedEmoji" component={SelectedEmoji} />
+        <Stack.Screen name="SelectedEmojis" component={SelectedEmojis} />
       </Stack.Navigator>
     </NavigationContainer>
   )
