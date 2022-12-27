@@ -71,9 +71,6 @@ export const EmojiCategory = React.memo(
 
         if (isSelected) {
           selectedEmojiCallback?.(parsedEmoji)
-          return true
-        } else {
-          return false
         }
       },
       [currentlySelectedEmojis, onEmojiSelected, setKeyboardState, selectedEmojiCallback]
